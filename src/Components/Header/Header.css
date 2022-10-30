@@ -1,0 +1,21 @@
+.navUl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    background: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.navUl li a{
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
