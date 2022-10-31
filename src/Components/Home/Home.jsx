@@ -23,7 +23,8 @@ const Home = () => {
         });
     }
   };
-  // ==========================
+  // ========================== update 
+
 
   return (
     <>
@@ -38,11 +39,19 @@ const Home = () => {
                   <h1>Email : {user.email}</h1>
                   <h1>Adress : {user.adress}</h1>
                 </div>
-                <Link>
-                  <button className="btn" onClick={() => hendelDelete(user)}>
-                    Delete
-                  </button>
-                </Link>
+
+                <div>
+                  <Link>
+                    <button className="btn" onClick={() => hendelDelete(user)}>
+                      Delete
+                    </button>
+                  </Link>
+                  <Link to={`/update/${user._id}`}>
+                    <button className="btn">
+                      Update
+                    </button>
+                  </Link>
+                </div>
               </div>
             );
           })}
